@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-3.3.1.js"></script>
+    <script src="js/scripts.js"></script>
+    <title>Political Meter</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Political Meter</h1>
+      <h3>To find out about your political orientation, enter a little information about yourself:</h3>
+
+<!-- Personal Info -->
+    <div class="row">
+      <form id="political-meter">
+        <div class="col-md-12">
+          <label for="age">Age</label>
+          <input class="input" id="age" type="text">
+          <label for="income">Income Level</label>
+          <select class="input" id="income">
+            <option>Below $20,000</option>
+            <option>$20,000-$49,999</option>
+            <option>$50,000-$99,999</option>
+            <option>above $100,000</option>
+          </select>
+        </div>
+
+<!-- //political preferences -->
+        <div class="col-md-12">
+
+          <h3>Which do you prefer? You may select multiple choices.</h3>
+            <label class="checkbox-inline">
+              <input type="checkbox" id="inlineCheckbox1" value="option1">New things
+            </label>
+            <label class="checkbox-inline">
+              <input type="checkbox" id="inlineCheckbox2" value="option2">Old things
+            </label>
+            <label class="checkbox-inline">
+              <input type="checkbox" id="inlineCheckbox3" value="option3">Facebook
+            </label>
+            <label class="checkbox-inline">
+              <input type="checkbox" id="inlineCheckbox4" value="option4">Instagram
+            </label>
+            <label class="checkbox-inline">
+              <input type="checkbox" id="inlineCheckbox5" value="option5">Reading news
+            </label>
+
+          <button type="submit" class="btn btn-primary btn-lg" id="button">Show my political preferences!!!</button>
+
+        </div>
+      </form>
+    </div>
+    <div class="row">
+      <div class="col-md-6">
+      <div id="result">
+        <blockquote>
+          <h4>Based on the parameters that you've entered, your political orientation is <span id="answer"></span>. Thank you for your participation in the survey.</h4>
+      </blockquote>
+      </div>
+      </div>
+    </div>
+
+    </div>
+  </body>
+</html>
+
+<!-- //personal info -->
